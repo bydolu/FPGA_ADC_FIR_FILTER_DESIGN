@@ -1,0 +1,386 @@
+
+*** Running vivado
+    with args -log FLOW_METER_SYSTEM.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FLOW_METER_SYSTEM.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source FLOW_METER_SYSTEM.tcl -notrace
+Command: synth_design -top FLOW_METER_SYSTEM -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17244 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 977.223 ; gain = 235.238
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FLOW_METER_SYSTEM' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+INFO: [Synth 8-3491] module 'clk_div2' declared at 'C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/kodlar/clock_div2.vhd:32' bound to instance 'clockDiv' of component 'clk_div2' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'clk_div2' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'clk_div2' (1#1) [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-3491] module 'xadc_wiz_0' declared at 'C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.runs/synth_1/.Xil/Vivado-15308-DESKTOP-0PU1FP0/realtime/xadc_wiz_0_stub.vhdl:5' bound to instance 'ADCimp' of component 'xadc_wiz_0' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.runs/synth_1/.Xil/Vivado-15308-DESKTOP-0PU1FP0/realtime/xadc_wiz_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'EightBitDataPassDelay' declared at 'C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:34' bound to instance 'Delaytimer' of component 'EightBitDataPassDelay' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'EightBitDataPassDelay' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:40]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF1' of component 'DFF' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'DFF' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'DFF' (2#1) [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF2' of component 'DFF' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:59]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF3' of component 'DFF' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:66]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF4' of component 'DFF' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:73]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF5' of component 'DFF' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:80]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF6' of component 'DFF' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:86]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF7' of component 'DFF' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:93]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF8' of component 'DFF' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:100]
+INFO: [Synth 8-256] done synthesizing module 'EightBitDataPassDelay' (3#1) [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:40]
+INFO: [Synth 8-3491] module 'sseg_dec' declared at 'C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/kodlar/sseg_dec.vhd:30' bound to instance 'SSegDisp' of component 'sseg_dec' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'sseg_dec' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/kodlar/sseg_dec.vhd:42]
+INFO: [Synth 8-3491] module 'bin2bcdconv' declared at 'C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/kodlar/sseg_dec.vhd:158' bound to instance 'my_conv' of component 'bin2bcdconv' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/kodlar/sseg_dec.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'bin2bcdconv' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/kodlar/sseg_dec.vhd:168]
+INFO: [Synth 8-256] done synthesizing module 'bin2bcdconv' (4#1) [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/kodlar/sseg_dec.vhd:168]
+INFO: [Synth 8-3491] module 'clk_div' declared at 'C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/kodlar/sseg_dec.vhd:259' bound to instance 'my_clk' of component 'clk_div' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/kodlar/sseg_dec.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/kodlar/sseg_dec.vhd:264]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (5#1) [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/kodlar/sseg_dec.vhd:264]
+INFO: [Synth 8-226] default block is never used [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/kodlar/sseg_dec.vhd:124]
+INFO: [Synth 8-226] default block is never used [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/kodlar/sseg_dec.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'sseg_dec' (6#1) [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/kodlar/sseg_dec.vhd:42]
+INFO: [Synth 8-3491] module 'EightBitBarMeter' declared at 'C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:6' bound to instance 'Barmeter' of component 'EightBitBarMeter' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'EightBitBarMeter' [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'EightBitBarMeter' (7#1) [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'FLOW_METER_SYSTEM' (8#1) [C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1049.844 ; gain = 307.859
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1049.844 ; gain = 307.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1049.844 ; gain = 307.859
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1049.844 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'ADCimp'
+Finished Parsing XDC File [c:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'ADCimp'
+Parsing XDC File [C:/Users/bd/Desktop/master.xdc]
+Finished Parsing XDC File [C:/Users/bd/Desktop/master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/bd/Desktop/master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FLOW_METER_SYSTEM_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FLOW_METER_SYSTEM_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1144.812 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1144.812 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1144.812 ; gain = 402.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1144.812 ; gain = 402.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for ADCimp. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1144.812 ; gain = 402.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1144.812 ; gain = 402.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 10    
+	   2 Input      4 Bit       Adders := 7     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 19    
+	   2 Input      4 Bit        Muxes := 19    
+	   5 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_div2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module DFF 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module bin2bcdconv 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 10    
+	   2 Input      4 Bit       Adders := 7     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 19    
+	   2 Input      4 Bit        Muxes := 14    
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module clk_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module sseg_dec 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "SSegDisp/" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1144.812 ; gain = 402.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1144.812 ; gain = 402.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1144.812 ; gain = 402.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1144.812 ; gain = 402.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1157.898 ; gain = 415.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1157.898 ; gain = 415.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1157.898 ; gain = 415.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1157.898 ; gain = 415.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1157.898 ; gain = 415.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1157.898 ; gain = 415.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |xadc_wiz_0    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |xadc_wiz_0_bbox_0 |     1|
+|2     |BUFG              |     1|
+|3     |CARRY4            |    16|
+|4     |LUT1              |     1|
+|5     |LUT2              |     5|
+|6     |LUT3              |     2|
+|7     |LUT4              |    14|
+|8     |LUT5              |    12|
+|9     |LUT6              |    42|
+|10    |MUXF7             |     8|
+|11    |FDRE              |    76|
+|12    |IBUF              |     3|
+|13    |OBUF              |    20|
++------+------------------+------+
+
+Report Instance Areas: 
++------+-------------+----------------------+------+
+|      |Instance     |Module                |Cells |
++------+-------------+----------------------+------+
+|1     |top          |                      |   226|
+|2     |  Delaytimer |EightBitDataPassDelay |    55|
+|3     |    FF1      |DFF                   |     1|
+|4     |    FF2      |DFF_0                 |     6|
+|5     |    FF3      |DFF_1                 |     2|
+|6     |    FF4      |DFF_2                 |     1|
+|7     |    FF5      |DFF_3                 |     2|
+|8     |    FF6      |DFF_4                 |    37|
+|9     |    FF7      |DFF_5                 |     5|
+|10    |    FF8      |DFF_6                 |     1|
+|11    |  SSegDisp   |sseg_dec              |    60|
+|12    |    my_clk   |clk_div               |    52|
+|13    |  clockDiv   |clk_div2              |    52|
++------+-------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1157.898 ; gain = 415.914
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 1157.898 ; gain = 320.945
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1157.898 ; gain = 415.914
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1169.977 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1170.941 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1170.941 ; gain = 714.395
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1170.941 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14/project_14.runs/synth_1/FLOW_METER_SYSTEM.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file FLOW_METER_SYSTEM_utilization_synth.rpt -pb FLOW_METER_SYSTEM_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 19 13:18:27 2024...

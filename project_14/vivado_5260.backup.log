@@ -1,0 +1,956 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Jan 25 14:05:58 2025
+# Process ID: 5260
+# Current directory: C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13804 C:\Users\dolub\Desktop\fpga\Proje_dosyalari\project_14\project_14.xpr
+# Log file: C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/vivado.log
+# Journal file: C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/bd/Desktop/Proje_dosyalari/Proje_dosyalari/project_14' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/dolub/Desktop/master.xdc', nor could it be found using path 'C:/Users/bd/Desktop/master.xdc'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 968.527 ; gain = 277.305
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: FLOW_METER_SYSTEM
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1457.246 ; gain = 226.133
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FLOW_METER_SYSTEM' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+INFO: [Synth 8-3491] module 'clk_div2' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:32' bound to instance 'clockDiv' of component 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'clk_div2' (1#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-3491] module 'xadc_wiz_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:5' bound to instance 'ADCimp' of component 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'EightBitDataPassDelay' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:34' bound to instance 'Delaytimer' of component 'EightBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'EightBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:40]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF1' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'DFF' (2#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF2' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:59]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF3' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:66]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF4' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:73]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF5' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:80]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF6' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:86]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF7' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:93]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF8' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:100]
+INFO: [Synth 8-256] done synthesizing module 'EightBitDataPassDelay' (3#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:40]
+INFO: [Synth 8-3491] module 'sseg_dec' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:30' bound to instance 'SSegDisp' of component 'sseg_dec' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'sseg_dec' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:42]
+INFO: [Synth 8-3491] module 'bin2bcdconv' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:158' bound to instance 'my_conv' of component 'bin2bcdconv' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'bin2bcdconv' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:168]
+INFO: [Synth 8-256] done synthesizing module 'bin2bcdconv' (4#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:168]
+INFO: [Synth 8-3491] module 'clk_div' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:259' bound to instance 'my_clk' of component 'clk_div' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:264]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (5#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:264]
+INFO: [Synth 8-226] default block is never used [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:124]
+INFO: [Synth 8-226] default block is never used [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'sseg_dec' (6#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:42]
+INFO: [Synth 8-3491] module 'EightBitBarMeter' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:6' bound to instance 'Barmeter' of component 'EightBitBarMeter' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'EightBitBarMeter' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'EightBitBarMeter' (7#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'FLOW_METER_SYSTEM' (8#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1511.758 ; gain = 280.645
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1511.758 ; gain = 280.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1511.758 ; gain = 280.645
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.dcp' for cell 'ADCimp'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1517.773 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 3 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'ADCimp/U0'
+Finished Parsing XDC File [c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'ADCimp/U0'
+41 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-275] File does not exist [C:/Users/dolub/Desktop/master.xdc]
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: FLOW_METER_SYSTEM
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1650.375 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FLOW_METER_SYSTEM' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+INFO: [Synth 8-3491] module 'clk_div2' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:32' bound to instance 'clockDiv' of component 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'clk_div2' (1#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-3491] module 'xadc_wiz_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:5' bound to instance 'ADCimp' of component 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'EightBitDataPassDelay' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:34' bound to instance 'Delaytimer' of component 'EightBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'EightBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:40]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF1' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'DFF' (2#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF2' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:59]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF3' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:66]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF4' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:73]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF5' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:80]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF6' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:86]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF7' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:93]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF8' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:100]
+INFO: [Synth 8-256] done synthesizing module 'EightBitDataPassDelay' (3#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:40]
+INFO: [Synth 8-3491] module 'sseg_dec' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:30' bound to instance 'SSegDisp' of component 'sseg_dec' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'sseg_dec' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:42]
+INFO: [Synth 8-3491] module 'bin2bcdconv' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:158' bound to instance 'my_conv' of component 'bin2bcdconv' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'bin2bcdconv' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:168]
+INFO: [Synth 8-256] done synthesizing module 'bin2bcdconv' (4#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:168]
+INFO: [Synth 8-3491] module 'clk_div' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:259' bound to instance 'my_clk' of component 'clk_div' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:264]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (5#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:264]
+INFO: [Synth 8-226] default block is never used [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:124]
+INFO: [Synth 8-226] default block is never used [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'sseg_dec' (6#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:42]
+INFO: [Synth 8-3491] module 'EightBitBarMeter' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:6' bound to instance 'Barmeter' of component 'EightBitBarMeter' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'EightBitBarMeter' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'EightBitBarMeter' (7#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'FLOW_METER_SYSTEM' (8#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1650.375 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1650.375 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1650.375 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.dcp' for cell 'ADCimp'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1650.375 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 3 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'ADCimp/U0'
+Finished Parsing XDC File [c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'ADCimp/U0'
+40 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-275] File does not exist [C:/Users/dolub/Desktop/master.xdc]
+update_files -from_files C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/master.xdc -to_files C:/Users/dolub/Desktop/master.xdc -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file 'C:/Users/dolub/Desktop/master.xdc' with file 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/master.xdc'.
+set_property target_constrs_file C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/master.xdc [current_fileset -constrset]
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: FLOW_METER_SYSTEM
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1699.809 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FLOW_METER_SYSTEM' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+INFO: [Synth 8-3491] module 'clk_div2' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:32' bound to instance 'clockDiv' of component 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'clk_div2' (1#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-3491] module 'xadc_wiz_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:5' bound to instance 'ADCimp' of component 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'EightBitDataPassDelay' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:34' bound to instance 'Delaytimer' of component 'EightBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'EightBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:40]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF1' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'DFF' (2#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF2' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:59]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF3' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:66]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF4' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:73]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF5' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:80]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF6' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:86]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF7' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:93]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF8' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:100]
+INFO: [Synth 8-256] done synthesizing module 'EightBitDataPassDelay' (3#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:40]
+INFO: [Synth 8-3491] module 'sseg_dec' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:30' bound to instance 'SSegDisp' of component 'sseg_dec' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'sseg_dec' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:42]
+INFO: [Synth 8-3491] module 'bin2bcdconv' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:158' bound to instance 'my_conv' of component 'bin2bcdconv' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'bin2bcdconv' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:168]
+INFO: [Synth 8-256] done synthesizing module 'bin2bcdconv' (4#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:168]
+INFO: [Synth 8-3491] module 'clk_div' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:259' bound to instance 'my_clk' of component 'clk_div' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:264]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (5#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:264]
+INFO: [Synth 8-226] default block is never used [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:124]
+INFO: [Synth 8-226] default block is never used [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'sseg_dec' (6#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:42]
+INFO: [Synth 8-3491] module 'EightBitBarMeter' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:6' bound to instance 'Barmeter' of component 'EightBitBarMeter' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'EightBitBarMeter' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'EightBitBarMeter' (7#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'FLOW_METER_SYSTEM' (8#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1699.809 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1699.809 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1699.809 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.dcp' for cell 'ADCimp'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1699.809 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 3 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'ADCimp/U0'
+Finished Parsing XDC File [c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'ADCimp/U0'
+Parsing XDC File [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/master.xdc]
+Finished Parsing XDC File [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1734.742 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 1741.809 ; gain = 42.000
+42 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 1741.809 ; gain = 42.000
+close_design
+create_ip -name fir_compiler -vendor xilinx.com -library ip -version 7.2 -module_name fir_compiler_0 -dir c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip
+set_property -dict [list CONFIG.Sample_Frequency {0.1} CONFIG.Clock_Frequency {100.0} CONFIG.Quantization {Quantize_Only} CONFIG.Coefficient_Width {20} CONFIG.BestPrecision {false} CONFIG.Output_Rounding_Mode {Truncate_LSBs} CONFIG.Output_Width {24} CONFIG.Coefficient_Fractional_Bits {12} CONFIG.Coefficient_Structure {Inferred} CONFIG.Data_Width {16} CONFIG.Output_Rounding_Mode {Truncate_LSBs} CONFIG.Output_Width {24} CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate}] [get_ips fir_compiler_0]
+generate_target {instantiation_template} [get_files c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fir_compiler_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fir_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fir_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'fir_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'fir_compiler_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'fir_compiler_0'...
+INFO: [xilinx.com:ip:fir_compiler:7.2-1] fir_compiler_0: Coefficient Reload not selected, no files generated
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fir_compiler_0'...
+catch { config_ip_cache -export [get_ips -all fir_compiler_0] }
+export_ip_user_files -of_objects [get_files c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci]
+launch_runs -jobs 8 fir_compiler_0_synth_1
+[Sat Jan 25 14:34:03 2025] Launched fir_compiler_0_synth_1...
+Run output will be captured here: C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.runs/fir_compiler_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci] -directory C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.ip_user_files -ipstatic_source_dir C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.cache/compile_simlib/modelsim} {questa=C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.cache/compile_simlib/questa} {riviera=C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.cache/compile_simlib/riviera} {activehdl=C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: FLOW_METER_SYSTEM
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1832.891 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FLOW_METER_SYSTEM' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+INFO: [Synth 8-3491] module 'clk_div2' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:32' bound to instance 'clockDiv' of component 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'clk_div2' (1#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-3491] module 'xadc_wiz_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:5' bound to instance 'ADCimp' of component 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'fir_compiler_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/fir_compiler_0_stub.vhdl:5' bound to instance 'fir_filter' of component 'fir_compiler_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'fir_compiler_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/fir_compiler_0_stub.vhdl:17]
+ERROR: [Synth 8-549] port width mismatch for port 's_axis_data_tdata': port width = 16, actual width = 8 [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:150]
+ERROR: [Synth 8-285] failed synthesizing module 'FLOW_METER_SYSTEM' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1832.891 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+8 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: FLOW_METER_SYSTEM
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1832.891 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FLOW_METER_SYSTEM' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+INFO: [Synth 8-3491] module 'clk_div2' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:32' bound to instance 'clockDiv' of component 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'clk_div2' (1#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-3491] module 'xadc_wiz_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:5' bound to instance 'ADCimp' of component 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'fir_compiler_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/fir_compiler_0_stub.vhdl:5' bound to instance 'fir_filter' of component 'fir_compiler_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'fir_compiler_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/fir_compiler_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'EightBitDataPassDelay' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:34' bound to instance 'Delaytimer' of component 'EightBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'EightBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:40]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF1' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'DFF' (2#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF2' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:59]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF3' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:66]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF4' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:73]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF5' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:80]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF6' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:86]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF7' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:93]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF8' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:100]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF9' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:107]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF10' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:114]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF11' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:121]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF12' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:128]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF13' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:135]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF14' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:142]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF15' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:149]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF16' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:156]
+ERROR: [Synth 8-97] array index 16 out of range [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:157]
+ERROR: [Synth 8-97] array index 16 out of range [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:160]
+ERROR: [Synth 8-285] failed synthesizing module 'EightBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:40]
+ERROR: [Synth 8-285] failed synthesizing module 'FLOW_METER_SYSTEM' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1832.891 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+28 Infos, 0 Warnings, 0 Critical Warnings and 5 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: FLOW_METER_SYSTEM
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1832.891 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FLOW_METER_SYSTEM' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+INFO: [Synth 8-3491] module 'clk_div2' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:32' bound to instance 'clockDiv' of component 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'clk_div2' (1#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-3491] module 'xadc_wiz_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:5' bound to instance 'ADCimp' of component 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'fir_compiler_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/fir_compiler_0_stub.vhdl:5' bound to instance 'fir_filter' of component 'fir_compiler_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'fir_compiler_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/fir_compiler_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'EightBitDataPassDelay' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:34' bound to instance 'Delaytimer' of component 'EightBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'EightBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:40]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF1' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'DFF' (2#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF2' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:59]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF3' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:66]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF4' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:73]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF5' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:80]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF6' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:86]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF7' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:93]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF8' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:100]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF9' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:107]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF10' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:114]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF11' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:121]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF12' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:128]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF13' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:135]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF14' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:142]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF15' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:149]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF16' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:156]
+INFO: [Synth 8-256] done synthesizing module 'EightBitDataPassDelay' (3#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:40]
+ERROR: [Synth 8-549] port width mismatch for port 'FastIn': port width = 16, actual width = 8 [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:152]
+ERROR: [Synth 8-549] port width mismatch for port 'HeldSample': port width = 16, actual width = 8 [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:97]
+ERROR: [Synth 8-285] failed synthesizing module 'FLOW_METER_SYSTEM' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1832.891 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+29 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: FLOW_METER_SYSTEM
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1832.891 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FLOW_METER_SYSTEM' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+INFO: [Synth 8-3491] module 'clk_div2' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:32' bound to instance 'clockDiv' of component 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'clk_div2' (1#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-3491] module 'xadc_wiz_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:5' bound to instance 'ADCimp' of component 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'fir_compiler_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/fir_compiler_0_stub.vhdl:5' bound to instance 'fir_filter' of component 'fir_compiler_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'fir_compiler_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/fir_compiler_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'EightBitDataPassDelay' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:34' bound to instance 'Delaytimer' of component 'EightBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'EightBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:40]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF1' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'DFF' (2#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF2' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:59]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF3' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:66]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF4' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:73]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF5' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:80]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF6' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:86]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF7' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:93]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF8' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:100]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF9' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:107]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF10' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:113]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF11' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:119]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF12' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:125]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF13' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:131]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF14' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:137]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF15' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:143]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF16' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:149]
+INFO: [Synth 8-256] done synthesizing module 'EightBitDataPassDelay' (3#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:40]
+ERROR: [Synth 8-549] port width mismatch for port 'FastIn': port width = 16, actual width = 8 [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:152]
+ERROR: [Synth 8-549] port width mismatch for port 'HeldSample': port width = 16, actual width = 8 [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:97]
+ERROR: [Synth 8-285] failed synthesizing module 'FLOW_METER_SYSTEM' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1832.891 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+29 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: FLOW_METER_SYSTEM
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1832.891 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FLOW_METER_SYSTEM' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+INFO: [Synth 8-3491] module 'clk_div2' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:32' bound to instance 'clockDiv' of component 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'clk_div2' (1#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-3491] module 'xadc_wiz_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:5' bound to instance 'ADCimp' of component 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'fir_compiler_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/fir_compiler_0_stub.vhdl:5' bound to instance 'fir_filter' of component 'fir_compiler_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'fir_compiler_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/fir_compiler_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'EightBitDataPassDelay' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:34' bound to instance 'Delaytimer' of component 'EightBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'EightBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:40]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF1' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'DFF' (2#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF2' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:59]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF3' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:66]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF4' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:73]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF5' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:80]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF6' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:86]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF7' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:93]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF8' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:100]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF9' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:107]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF10' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:113]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF11' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:119]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF12' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:125]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF13' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:131]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF14' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:137]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF15' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:143]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF16' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:149]
+INFO: [Synth 8-256] done synthesizing module 'EightBitDataPassDelay' (3#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:40]
+INFO: [Synth 8-3491] module 'sseg_dec' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:30' bound to instance 'SSegDisp' of component 'sseg_dec' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'sseg_dec' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:42]
+INFO: [Synth 8-3491] module 'bin2bcdconv' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:158' bound to instance 'my_conv' of component 'bin2bcdconv' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'bin2bcdconv' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:168]
+INFO: [Synth 8-256] done synthesizing module 'bin2bcdconv' (4#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:168]
+ERROR: [Synth 8-549] port width mismatch for port 'BIN_CNT_IN': port width = 8, actual width = 16 [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:66]
+INFO: [Synth 8-226] default block is never used [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:124]
+INFO: [Synth 8-226] default block is never used [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:132]
+ERROR: [Synth 8-285] failed synthesizing module 'sseg_dec' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:42]
+ERROR: [Synth 8-285] failed synthesizing module 'FLOW_METER_SYSTEM' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1832.891 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+36 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: FLOW_METER_SYSTEM
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1887.059 ; gain = 15.484
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FLOW_METER_SYSTEM' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+INFO: [Synth 8-3491] module 'clk_div2' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:32' bound to instance 'clockDiv' of component 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'clk_div2' (1#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-3491] module 'xadc_wiz_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:5' bound to instance 'ADCimp' of component 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'fir_compiler_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/fir_compiler_0_stub.vhdl:5' bound to instance 'fir_filter' of component 'fir_compiler_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'fir_compiler_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/fir_compiler_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'EightBitDataPassDelay' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:34' bound to instance 'Delaytimer' of component 'EightBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'EightBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:40]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF1' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'DFF' (2#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF2' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:59]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF3' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:66]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF4' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:73]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF5' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:80]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF6' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:86]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF7' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:93]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF8' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:100]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF9' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:107]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF10' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:113]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF11' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:119]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF12' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:125]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF13' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:131]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF14' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:137]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF15' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:143]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF16' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:149]
+INFO: [Synth 8-256] done synthesizing module 'EightBitDataPassDelay' (3#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:40]
+INFO: [Synth 8-3491] module 'sseg_dec' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:30' bound to instance 'SSegDisp' of component 'sseg_dec' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'sseg_dec' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:42]
+INFO: [Synth 8-3491] module 'bin2bcdconv' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:158' bound to instance 'my_conv' of component 'bin2bcdconv' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'bin2bcdconv' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:168]
+INFO: [Synth 8-256] done synthesizing module 'bin2bcdconv' (4#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:168]
+INFO: [Synth 8-3491] module 'clk_div' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:259' bound to instance 'my_clk' of component 'clk_div' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:264]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (5#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:264]
+INFO: [Synth 8-226] default block is never used [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:124]
+INFO: [Synth 8-226] default block is never used [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'sseg_dec' (6#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:42]
+INFO: [Synth 8-3491] module 'EightBitBarMeter' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:6' bound to instance 'Barmeter' of component 'EightBitBarMeter' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'EightBitBarMeter' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'EightBitBarMeter' (7#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:11]
+ERROR: [Synth 8-97] array index 15 out of range [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:165]
+ERROR: [Synth 8-285] failed synthesizing module 'FLOW_METER_SYSTEM' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1887.059 ; gain = 15.484
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+43 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: FLOW_METER_SYSTEM
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1887.059 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FLOW_METER_SYSTEM' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+INFO: [Synth 8-3491] module 'clk_div2' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:32' bound to instance 'clockDiv' of component 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'clk_div2' (1#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-3491] module 'xadc_wiz_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:5' bound to instance 'ADCimp' of component 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'fir_compiler_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/fir_compiler_0_stub.vhdl:5' bound to instance 'fir_filter' of component 'fir_compiler_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'fir_compiler_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/fir_compiler_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'EightBitDataPassDelay' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:34' bound to instance 'Delaytimer' of component 'EightBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'EightBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:40]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF1' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'DFF' (2#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF2' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:59]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF3' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:66]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF4' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:73]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF5' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:80]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF6' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:86]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF7' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:93]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF8' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:100]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF9' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:107]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF10' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:113]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF11' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:119]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF12' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:125]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF13' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:131]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF14' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:137]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF15' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:143]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF16' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:149]
+INFO: [Synth 8-256] done synthesizing module 'EightBitDataPassDelay' (3#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:40]
+INFO: [Synth 8-3491] module 'sseg_dec' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:30' bound to instance 'SSegDisp' of component 'sseg_dec' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'sseg_dec' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:42]
+INFO: [Synth 8-3491] module 'bin2bcdconv' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:158' bound to instance 'my_conv' of component 'bin2bcdconv' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'bin2bcdconv' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:168]
+INFO: [Synth 8-256] done synthesizing module 'bin2bcdconv' (4#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:168]
+INFO: [Synth 8-3491] module 'clk_div' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:259' bound to instance 'my_clk' of component 'clk_div' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:264]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (5#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:264]
+INFO: [Synth 8-226] default block is never used [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:124]
+INFO: [Synth 8-226] default block is never used [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'sseg_dec' (6#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:42]
+INFO: [Synth 8-3491] module 'EightBitBarMeter' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:6' bound to instance 'Barmeter' of component 'EightBitBarMeter' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'EightBitBarMeter' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'EightBitBarMeter' (7#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'FLOW_METER_SYSTEM' (8#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[15]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[14]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[13]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[12]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[11]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[10]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[9]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[8]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1887.059 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1887.059 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1887.059 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.dcp' for cell 'ADCimp'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.dcp' for cell 'fir_filter'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1898.426 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 3 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'ADCimp/U0'
+Finished Parsing XDC File [c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'ADCimp/U0'
+Parsing XDC File [c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/fir_compiler_0/constraints/fir_compiler_v7_2.xdc] for cell 'fir_filter/U0'
+Finished Parsing XDC File [c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/fir_compiler_0/constraints/fir_compiler_v7_2.xdc] for cell 'fir_filter/U0'
+Parsing XDC File [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/master.xdc]
+Finished Parsing XDC File [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1935.531 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1935.531 ; gain = 48.473
+53 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1935.531 ; gain = 48.473
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1966.504 ; gain = 30.973
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FLOW_METER_SYSTEM' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+INFO: [Synth 8-3491] module 'clk_div2' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:32' bound to instance 'clockDiv' of component 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'clk_div2' (1#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-3491] module 'xadc_wiz_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:5' bound to instance 'ADCimp' of component 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'fir_compiler_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/fir_compiler_0_stub.vhdl:5' bound to instance 'fir_filter' of component 'fir_compiler_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'fir_compiler_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/fir_compiler_0_stub.vhdl:17]
+INFO: [Synth 8-637] synthesizing blackbox instance 'Delaytimer' of component 'EightBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:152]
+INFO: [Synth 8-3491] module 'sseg_dec' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:30' bound to instance 'SSegDisp' of component 'sseg_dec' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'sseg_dec' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:42]
+INFO: [Synth 8-3491] module 'bin2bcdconv' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:158' bound to instance 'my_conv' of component 'bin2bcdconv' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'bin2bcdconv' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:168]
+INFO: [Synth 8-256] done synthesizing module 'bin2bcdconv' (2#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:168]
+INFO: [Synth 8-3491] module 'clk_div' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:259' bound to instance 'my_clk' of component 'clk_div' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:264]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (3#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:264]
+INFO: [Synth 8-226] default block is never used [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:124]
+INFO: [Synth 8-226] default block is never used [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'sseg_dec' (4#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:42]
+INFO: [Synth 8-3491] module 'EightBitBarMeter' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:6' bound to instance 'Barmeter' of component 'EightBitBarMeter' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'EightBitBarMeter' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'EightBitBarMeter' (5#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'FLOW_METER_SYSTEM' (6#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[15]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[14]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[13]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[12]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[11]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[10]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[9]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[8]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1999.164 ; gain = 63.633
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2022.066 ; gain = 86.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2022.066 ; gain = 86.535
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.dcp' for cell 'ADCimp'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.dcp' for cell 'fir_filter'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2042.023 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 3 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'ADCimp/U0'
+Finished Parsing XDC File [c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'ADCimp/U0'
+Parsing XDC File [c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/fir_compiler_0/constraints/fir_compiler_v7_2.xdc] for cell 'fir_filter/U0'
+Finished Parsing XDC File [c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/fir_compiler_0/constraints/fir_compiler_v7_2.xdc] for cell 'fir_filter/U0'
+Parsing XDC File [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/master.xdc]
+Finished Parsing XDC File [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2042.023 ; gain = 106.492
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2075.891 ; gain = 29.895
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FLOW_METER_SYSTEM' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+INFO: [Synth 8-3491] module 'clk_div2' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:32' bound to instance 'clockDiv' of component 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'clk_div2' (1#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-3491] module 'xadc_wiz_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:5' bound to instance 'ADCimp' of component 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'fir_compiler_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/fir_compiler_0_stub.vhdl:5' bound to instance 'fir_filter' of component 'fir_compiler_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'fir_compiler_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/fir_compiler_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'SixteenBitDataPassDelay' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:9' bound to instance 'Delaytimer' of component 'SixteenBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'SixteenBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:15]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF1' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'DFF' (2#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF2' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:34]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF3' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:41]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF4' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:48]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF5' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:55]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF6' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:61]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF7' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:68]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF8' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:75]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF9' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:82]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF10' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:88]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF11' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:94]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF12' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:100]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF13' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:106]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF14' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:112]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF15' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:118]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF16' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:124]
+INFO: [Synth 8-256] done synthesizing module 'SixteenBitDataPassDelay' (3#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:15]
+INFO: [Synth 8-3491] module 'sseg_dec' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:30' bound to instance 'SSegDisp' of component 'sseg_dec' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'sseg_dec' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:42]
+INFO: [Synth 8-3491] module 'bin2bcdconv' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:158' bound to instance 'my_conv' of component 'bin2bcdconv' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'bin2bcdconv' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:168]
+INFO: [Synth 8-256] done synthesizing module 'bin2bcdconv' (4#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:168]
+INFO: [Synth 8-3491] module 'clk_div' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:259' bound to instance 'my_clk' of component 'clk_div' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:264]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (5#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:264]
+INFO: [Synth 8-226] default block is never used [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:124]
+INFO: [Synth 8-226] default block is never used [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'sseg_dec' (6#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:42]
+INFO: [Synth 8-3491] module 'EightBitBarMeter' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:6' bound to instance 'Barmeter' of component 'EightBitBarMeter' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'EightBitBarMeter' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'EightBitBarMeter' (7#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'FLOW_METER_SYSTEM' (8#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:43]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[15]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[14]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[13]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[12]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[11]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[10]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[9]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[8]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2087.613 ; gain = 41.617
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2111.500 ; gain = 65.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2111.500 ; gain = 65.504
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.dcp' for cell 'ADCimp'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.dcp' for cell 'fir_filter'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2131.430 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 3 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'ADCimp/U0'
+Finished Parsing XDC File [c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'ADCimp/U0'
+Parsing XDC File [c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/fir_compiler_0/constraints/fir_compiler_v7_2.xdc] for cell 'fir_filter/U0'
+Finished Parsing XDC File [c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/fir_compiler_0/constraints/fir_compiler_v7_2.xdc] for cell 'fir_filter/U0'
+Parsing XDC File [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/master.xdc]
+Finished Parsing XDC File [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2131.430 ; gain = 87.938
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: FLOW_METER_SYSTEM
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2163.809 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FLOW_METER_SYSTEM' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:22]
+INFO: [Synth 8-3491] module 'clk_div2' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:32' bound to instance 'clockDiv' of component 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'clk_div2' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'clk_div2' (1#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/clock_div2.vhd:37]
+INFO: [Synth 8-3491] module 'xadc_wiz_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:5' bound to instance 'ADCimp' of component 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/xadc_wiz_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'fir_compiler_0' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/fir_compiler_0_stub.vhdl:5' bound to instance 'fir_filter' of component 'fir_compiler_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'fir_compiler_0' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/.Xil/Vivado-5260-Burak/realtime/fir_compiler_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'SixteenBitDataPassDelay' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:9' bound to instance 'Delaytimer' of component 'SixteenBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'SixteenBitDataPassDelay' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:15]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF1' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'DFF' (2#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:42]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF2' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:34]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF3' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:41]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF4' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:48]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF5' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:55]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF6' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:61]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF7' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:68]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF8' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:75]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF9' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:82]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF10' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:88]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF11' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:94]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF12' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:100]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF13' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:106]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF14' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:112]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF15' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:118]
+INFO: [Synth 8-3491] module 'DFF' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/DFF.vhd:34' bound to instance 'FF16' of component 'DFF' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:124]
+INFO: [Synth 8-256] done synthesizing module 'SixteenBitDataPassDelay' (3#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/EightBitDataPassDelay.vhd:15]
+INFO: [Synth 8-3491] module 'sseg_dec' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:30' bound to instance 'SSegDisp' of component 'sseg_dec' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'sseg_dec' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:42]
+INFO: [Synth 8-3491] module 'bin2bcdconv' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:158' bound to instance 'my_conv' of component 'bin2bcdconv' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'bin2bcdconv' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:168]
+INFO: [Synth 8-256] done synthesizing module 'bin2bcdconv' (4#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:168]
+INFO: [Synth 8-3491] module 'clk_div' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:259' bound to instance 'my_clk' of component 'clk_div' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:264]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (5#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:264]
+INFO: [Synth 8-226] default block is never used [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:124]
+INFO: [Synth 8-226] default block is never used [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'sseg_dec' (6#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/sseg_dec.vhd:42]
+INFO: [Synth 8-3491] module 'EightBitBarMeter' declared at 'C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:6' bound to instance 'Barmeter' of component 'EightBitBarMeter' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'EightBitBarMeter' [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'EightBitBarMeter' (7#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/kodlar/EightBitBarMeter.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'FLOW_METER_SYSTEM' (8#1) [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/new/flow_meter_system.vhd:22]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[15]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[14]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[13]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[12]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[11]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[10]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[9]
+WARNING: [Synth 8-3331] design bin2bcdconv has unconnected port BIN_CNT_IN[8]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2163.809 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2163.809 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2163.809 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.dcp' for cell 'ADCimp'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.dcp' for cell 'fir_filter'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2163.809 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 3 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'ADCimp/U0'
+Finished Parsing XDC File [c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'ADCimp/U0'
+Parsing XDC File [c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/fir_compiler_0/constraints/fir_compiler_v7_2.xdc] for cell 'fir_filter/U0'
+Finished Parsing XDC File [c:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/project_14.srcs/sources_1/ip/fir_compiler_0/constraints/fir_compiler_v7_2.xdc] for cell 'fir_filter/U0'
+Parsing XDC File [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/master.xdc]
+Finished Parsing XDC File [C:/Users/dolub/Desktop/fpga/Proje_dosyalari/project_14/master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2163.809 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2163.809 ; gain = 0.000
+53 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2163.809 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 31 14:38:25 2025...
